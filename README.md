@@ -1,4 +1,4 @@
-# Page Selection React App
+# Ellty-test1 React App
 
 ## Overview
 This React application allows users to select multiple pages using checkboxes. It includes a "Select All Pages" checkbox that toggles the selection of all individual page checkboxes. The interface is styled using CSS, and the app maintains the state of the checkboxes using React hooks.
