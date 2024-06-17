@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.app-container {
+    width: 400px;
+    margin: 0 auto;
+    /* Centering the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pages-list {
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pages-list::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
 }
 
-.App-link {
-  color: #61dafb;
+.page-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-checkbox label {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    /* Ensures the label respects width and height */
+    width: 370px;
+    height: 42px;
+}
+
+.done-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.done-button button {
+    width: 100%;
+    height: 40px;
+    background-color: #f7d618;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
 }
